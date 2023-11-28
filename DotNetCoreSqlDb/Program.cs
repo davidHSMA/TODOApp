@@ -12,6 +12,8 @@ builder.Services.AddDbContext<MyDatabaseContext>(options =>
 // options.InstanceName = "SampleInstance";
 // });
 
+//dummy
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
