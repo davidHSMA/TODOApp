@@ -69,6 +69,9 @@ namespace DotNetCoreSqlDb.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Description,CreatedDate")] Todo todo)
         {
+            
+            Content($"<script>console.log('Das ist ein Test')</script>");
+
             if (ModelState.IsValid)
             {
                 _context.Add(todo);
