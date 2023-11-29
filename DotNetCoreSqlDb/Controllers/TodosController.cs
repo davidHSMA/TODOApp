@@ -70,7 +70,7 @@ namespace DotNetCoreSqlDb.Controllers
         public async Task<IActionResult> Create([Bind("ID,Description,CreatedDate")] Todo todo)
         {
             
-            Content($"<script>console.log('Das ist ein Test')</script>");
+            //Content($"<script>console.log('Das ist ein Test')</script>");
 
             if (ModelState.IsValid)
             {
